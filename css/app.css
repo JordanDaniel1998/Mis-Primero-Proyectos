@@ -1,0 +1,410 @@
+/* --------------------- global configurations -----------------*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1rem = 10px*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: #272829;
+}
+/* Globales */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0rem 0 2rem 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+nav a {
+  text-decoration: none;
+  color: #595a5f;
+  font-weight: 900;
+  transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  padding: 0 1rem;
+  font-size: 2rem;
+}
+
+/*---------------  -----------------*/
+
+.container {
+  max-width: 120rem; /*120rem*/
+  margin: 0 auto;
+}
+
+.header {
+  padding: 5rem 0;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 6rem;
+}
+
+.navbar__logo {
+  background-image: url(../img/codigo-binario.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 6rem;
+  height: 6rem;
+}
+
+.navbar__principal {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: center;
+}
+
+.navbar__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  background-color: #3d3e42;
+  margin: 1rem;
+  border-radius: 2rem;
+}
+
+.search__input {
+  margin: 0;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  font-weight: 700;
+  transition: color 0.5s ease;
+  border: none;
+  width: 10rem;
+  background-color: #3d3e42;
+  border-radius: 10rem;
+}
+
+a:hover,
+.search__paragraph:hover {
+  color: #ffffff;
+}
+
+/* --------------- INFORMATION ----------------------*/
+
+.information__grid {
+  display: grid;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.about__info {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__img {
+  margin: 0 auto;
+}
+
+.about__img img {
+  width: 40rem;
+}
+
+.about__title {
+  color: #f0bf6c;
+  margin: 0;
+}
+
+.about__title span {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.about__skills {
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.about__info a {
+  text-decoration: none;
+  border: 0.2rem #f0bf6c solid;
+  padding: 0.5rem 3rem;
+  margin-top: 1.6rem;
+  color: #f0bf6c;
+  font-weight: 900;
+  border-radius: 1.5rem;
+}
+
+.about__info a:hover {
+  color: #f0ece5;
+}
+
+.description {
+  margin-top: 5rem;
+  color: #ffffff;
+}
+
+.description__subtitle {
+  margin: 0;
+}
+
+.description__contenido {
+  margin: 0;
+  display: flex;
+  font-weight: 400;
+  gap: 0.5rem;
+}
+
+.description__contenido::before {
+  content: "";
+  display: inline-block;
+  width: 20rem;
+  height: 0.2rem;
+  background-color: #f0bf6c;
+  margin-top: 1.5rem;
+}
+
+/*-------------------------- SKILLS ------------------------*/
+
+.skils__heading {
+  text-align: center;
+  margin: 5rem 0 3rem 0;
+  color: #ffffff;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.skills__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  border-radius: 2rem;
+  background-color: #3d3e42;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skills__contenido:hover {
+  background-color: #f0bf6c;
+  transform: scale(1.1);
+}
+
+.skills__contenido img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.skills__title {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* ------ EXPERIENCE ------ */
+
+.experience__background {
+  margin-top: 5rem;
+  background-color: #3d3e42;
+  position: relative;
+  color: #ffffff;
+}
+
+.experience__heading {
+  position: absolute;
+  top: -5rem;
+}
+
+.experience__container {
+  display: flex;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding-top: 5rem;
+  justify-content: start;
+  gap: 5rem;
+}
+
+.experience__about {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.experience__about::before {
+  content: "";
+  display: inline-block;
+  width: 0.3rem;
+  height: 80%;
+  background-color: #f0bf6c;
+  position: absolute;
+  top: 6rem;
+  left: -2.5rem;
+}
+
+.experience__date p {
+  background: #5d5e61;
+  padding: 0 2rem;
+  font-weight: 400;
+  border-radius: 2rem;
+}
+
+.experience__title span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: #f0bf6c;
+}
+
+.experience__description {
+  margin: 3rem 0;
+}
+
+/* --------------- PROJECT ------------------------*/
+
+.projects__heading {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 5rem;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  color: #ffffff;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid #f0bf6c;
+}
+
+.project p {
+  padding: 0 2rem;
+}
+
+.project img {
+  flex: auto;
+}
+
+/* ----------- EDUCATE ---------------*/
+
+.educate__heading {
+  margin-top: 5rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.educate__grid {
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.educate {
+  border: 0.2rem solid #595a5f;
+}
+
+.educate h4 {
+  text-align: center;
+  color: #f0bf6c;
+}
+
+.educate p {
+  padding: 0 2rem;
+}
+
+/*------------------- FOOTER ---------------*/
+
+footer {
+  border-top: 0.1rem solid #f0bf6c;
+  color: #ffffff;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+/* ------------------ CONTACT ME -----------------*/
+
+.contact {
+  margin-top: 5rem;
+}
+
+.contact__heading {
+  color: #ffffff;
+  text-align: center;
+}
+
+.form__contact {
+  color: #ffffff;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.campo {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  padding-bottom: 0;
+}
+
+.campo label {
+  flex: 1;
+}
+
+.campo input,
+.campo textarea {
+  flex: 4;
+}
+
+.btn {
+  background-color: #b4883b;
+  margin-top: 5rem;
+  margin-left: 2rem;
+  padding: 1rem 8rem;
+  display: block;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a18149;
+}
+
+legend {
+  text-transform: uppercase;
+}
