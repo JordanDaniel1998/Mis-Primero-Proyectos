@@ -317,7 +317,7 @@ a:hover,
 }
 
 .project img {
-  flex: auto;
+  height: 35rem;
 }
 
 /* ----------- EDUCATE ---------------*/
