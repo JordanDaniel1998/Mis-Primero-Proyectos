@@ -13,7 +13,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   line-height: 2;
-  background-color: #272829;
+  background-color: white;
 }
 /* Globales */
 h1,
@@ -67,7 +67,7 @@ nav {
 
 .nav__link a {
   text-decoration: none;
-  color: #ffffff;
+  color: #595a5f;
 }
 
 .nav__link a:hover {
@@ -90,6 +90,19 @@ main {
   flex: 10;
 }
 
+.img__font {
+  margin: 0 auto;
+}
+
+main .heading__google {
+  width: 30rem;
+  margin-top: 18rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 main .heading {
   margin-top: 8rem;
   text-align: center;
@@ -98,9 +111,9 @@ main .heading {
 
 .google {
   padding: 1rem;
-  border: 0.2rem solid #595a5f;
+  border: 0.1rem solid #86878d;
   border-radius: 2rem;
-  background-color: #595a5f;
+  background-color: white;
   max-width: 60rem;
   margin: 0 auto;
   display: flex;
@@ -129,12 +142,13 @@ main .heading {
 }
 
 .google__info a {
-  background-color: #595a5f;
+  background-color: #f2f2f2;
   text-decoration: none;
-  color: #ffffff;
+  color: #595a5f;
   font-size: 1.5rem;
   padding: 0.2rem 2rem;
   border: 0.1rem solid #595a5f;
+  font-weight: 600;
   border-radius: 1rem;
 }
 
@@ -145,12 +159,22 @@ main .heading {
 
 .google__text p {
   text-align: center;
-  color: #ffffff;
+  color: #595a5f;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .google__text span {
-  color: rgb(98, 161, 233);
+  color: #1b0eab;
+  word-spacing: 0.5rem;
+}
+
+.google__text span a {
+  text-decoration: none;
+}
+
+.google__text span a:hover {
+  text-decoration: underline;
 }
 
 body {
@@ -164,33 +188,36 @@ body {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: #f2f2f2;
 }
 
 .footer__country {
-  padding: 1rem;
-  color: white;
+  padding: 1rem 2rem;
+  color: #595a5f;
+  font-weight: 700;
   margin: 0;
-  border-bottom: 0.1rem solid #ffffff;
 }
 
 .footer__info {
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-top: 0.1rem solid rgb(190, 186, 186);
 }
 
 .about__google a,
 .about__info a {
-  color: #ffffff;
+  color: #595a5f;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .about__google a:hover,
 .about__info a:hover {
-  color: #ffffff;
+  color: #595a5f;
   text-decoration: underline;
+  font-weight: 700;
 }
 
 .about__google {
