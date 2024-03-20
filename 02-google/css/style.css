@@ -63,7 +63,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
+} 
 
 .nav__link a {
   text-decoration: none;
@@ -125,6 +125,15 @@ main .heading {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+}
+
+.google__search--input{
+  /* hide input style */
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  margin: 0 10px;
 }
 
 .google__container {
